@@ -1,0 +1,275 @@
+html {
+  scroll-behavior: smooth;
+}
+
+figure {
+  transform: scale(1);
+  transition: 0.25s ease-in-out;
+}
+
+body {
+  width: 100%;
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0% 20%;
+}
+
+.description-text {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem
+}
+
+.particles-div {
+  position: absolute;
+  height: 120vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#skills1,
+#skills2 {
+  transition: 0.4s ease;
+}
+
+.mouse-scroll-container {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.mouse-scroll {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 70px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  padding-top: 14px;
+}
+
+.loading-spinner div {
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.loading-spinner div.one {
+  animation-delay: 0s;
+}
+
+.loading-spinner div.two {
+  animation-delay: 0.16s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading-spinner div.three {
+  animation-delay: 0.32s;
+}
+
+.mouse-scroll-container {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+#avatarDiv {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 100px;
+}
+
+#skills1 {
+  border: 1px solid #c7c7c7;
+  border-radius: 20px 0px 0px 20px;
+  background-color: transparent;
+  margin-right: 5px;
+  box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
+}
+
+#skills2 {
+  border: 1px solid #c7c7c7;
+  border-radius: 0px 20px 20px 0px;
+  background-color: transparent;
+  margin-left: 5px;
+  box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
+}
+
+.projects {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 20px 57px -20px rgba(199, 199, 199, 1);
+}
+
+.project-icon-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.project-icon {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+}
+
+.projectButton {
+  border: 2px solid #3742fa;
+  border-radius: 15px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #3742fa;
+  transition: 0.2s ease;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+}
+
+.projectButton:hover {
+  background-color: #3742fa;
+  color: white;
+  text-decoration: none;
+}
+
+.project-desc {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  margin: 40px 20px;
+}
+
+#toTop {
+  position: fixed;
+  padding: 10px 15px;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100;
+  color: white;
+  background-color: #3742fa;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#toTop:hover {
+  transform: scale(1.2);
+}
+
+#skills-div {
+  width: 60%;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 1200px) {
+  .mainDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0% 0%;
+  }
+
+  .about-desc {
+    margin: 30% auto;
+  }
+}
+
+@media (min-width: 600px) {
+
+  #skills1:hover,
+  #skills2:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+
+
+  #skills-div {
+    width: 60%;
+  }
+
+  #skills2 {
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 0px;
+  }
+
+  #skills1 {
+    border-radius: 20px 20px 0px 0px;
+    margin-right: 0px;
+  }
+
+  #skills-div {
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .mouse-scroll-container {
+    bottom: -70px;
+  }
+
+  #avatar {
+    width: 200px;
+  }
+
+  #avatarDiv {
+    width: 200px;
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  body {
+    width: 100%;
+  }
+}
