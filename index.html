@@ -247,7 +247,7 @@
             "src": "assets/icons/mapbox.png"
           }
         ]
-      }, ,
+      },
       {
         "name": "Plantify",
         "src": "assets/img/Artboard%204.png",
@@ -260,6 +260,35 @@
           {
             "name": "UX & UI",
             "src": "assets/icons/uxui.png"
+          }
+        ]
+      },
+
+      ,
+      {
+        "name": "ChatNow",
+        "src": "assets/img/chatapp.png",
+        "desc": "A user-friendly live-chat app made with websockets. Join a room and start chatting.",
+        "link": "http://chatapp-env.eba-jcmbsdng.eu-central-1.elasticbeanstalk.com/",
+        "icons": [{
+            "name": "JavaScript",
+            "src": "assets/icons/js.png"
+          },
+          {
+            "name": "Node.js",
+            "src": "assets/icons/node.png"
+          },
+          {
+            "name": "Font awesome",
+            "src": "assets/icons/fontawesome.png"
+          },
+          {
+            "name": "Socket.io",
+            "src": "assets/icons/socket.io.png"
+          },
+          {
+            "name": "Hosted by Amazon Web Services",
+            "src": "assets/icons/aws.png"
           }
         ]
       }, {
@@ -317,7 +346,7 @@
           project.src + '" style="background-image: url(&quot;assets/img/desk.jpg&quot;);" />' + iconsHTML +
           '<div class="project-desc text-center">' + project.desc + '<div style="margin-top:40px;"><a href="' +
           project.link +
-          '" class="projectButton">See website</a></div></div></figure></div>';
+          '" class="projectButton">See project</a></div></div></figure></div>';
       } else {
         return '<div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in"> <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);"> <img class="img-fluid figure-img projects" src="' +
           project.src + '" style="background-image: url(&quot;assets/img/desk.jpg&quot;);" />' + iconsHTML +
