@@ -90,8 +90,8 @@
           I am passionate and enthusiastic about coding, with a creative flair.
         </h3>
         <h3 class="description-text">
-          <span style="font-weight: 600;color: #3742fa;">Multimedia designer</span>, now enriching my professional
-          skills by following a Bachelor in Web development at Copenhagen School of Design and Technology.
+          <span style="font-weight: 600;color: #3742fa;">Web developer</span>, excited for opportunities within the open-source community
+          and contributing to projects that serve a meaningful cause.
         </h3>
         <h3 class="description-text">
           Continuously growing my professional knowledge by looking for and creating new experiences.
@@ -118,8 +118,11 @@
       <h3 class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="false" data-aos-duration="300"
         data-aos-easing="ease-in" id="skills-h2"
         style="font-family: Raleway, sans-serif;margin-bottom: 30px;color: #3742fa; z-index: 1000 !important;">
-        Here is some of my work. Want to cooperate? Send an <a style="text-decoration: none;"
-          href="mailto:bertea74@gmail.com" target="_top">email</a> </h3>
+        Here is some of my work. Want to cooperate? Send an 
+        <a
+          style="text-decoration: none;"
+          target="_top">email</a> 
+      </h3>
       <div class="row" id="projectsDiv" style="margin-top: 60px;">
       </div>
     </div>
@@ -137,9 +140,9 @@
       <h3 class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="false" data-aos-duration="300"
         data-aos-easing="ease-in" id="skills-h2"
         style="font-family: Raleway, sans-serif;margin-bottom: 30px;color: #3742fa;">
-        Here are here are some of my skills that I am constantly improving on.</h3>
+        Here are some of my skills that I am constantly improving on.</h3>
       <div class="row" style="margin-top: 10%;">
-        <div class="col" style="padding: 0;" data-aos="zoom-in-right" data-aos-mirror="false" data-aos-duration="500"
+        <div class="col" style="padding: 0; min-width: 300px;" data-aos="zoom-in-right" data-aos-mirror="false" data-aos-duration="500"
           data-aos-easing="ease-in">
           <div id="skills1">
             <div style="padding-top: 50px;">
@@ -162,10 +165,11 @@
               Design Tools<br />
             </h4>
             <p style="padding-top: 5px;">InVision<br /></p>
+            <p>Figma<br /></p>
             <p style="padding-bottom: 50px;">Adobe Creative Cloud Suite</p>
           </div>
         </div>
-        <div style="padding: 0;" class="col" data-aos="zoom-in-left" data-aos-mirror="false" data-aos-duration="500"
+        <div style="padding: 0;  min-width: 300px;" class="col" data-aos="zoom-in-left" data-aos-mirror="false" data-aos-duration="500"
           data-aos-easing="ease-in">
           <div id="skills2">
             <div>
@@ -182,7 +186,7 @@
               Languages I speak<br />
             </h4>
             <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px; font-family: Raleway, sans-serif;">
-              React.js, Svelte, Vue.js, Node.js, Sapper, Laravel, SQL, MongoDB, HTML, CSS, JavaScript, and PHP
+              React.js, Svelte, Node.js, Sapper, Laravel, SQL, MongoDB, HTML, CSS, JavaScript, and PHP
               <br />
             </p>
             <h4 style="padding-top: 20px;color: #3742fa;">
@@ -193,6 +197,27 @@
             <p>Wordpress</p>
             <p>Xampp</p>
             <p style="padding-bottom: 50px;">Git</p>
+          </div>
+        </div>
+        <div style="padding: 0; min-width: 300px;" class="col" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500"
+          data-aos-easing="ease-in">
+          <div id="skills3">
+            <div>
+              <img src="assets/img/cloud.svg" width="90px" style="padding-top: 50px;" />
+            </div>
+            <h2 style="font-family: Raleway, sans-serif;font-weight: 600;padding-top: 20px;">
+              DevOps enthusiast
+            </h2>
+            <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px; font-family: Raleway, sans-serif;">
+              Building CI/CD pipelines for deploying the APIs and apps in an agile way.<br />
+            </p>
+            <h4 style="padding-top: 20px;color: #3742fa;">
+              I have experience with
+            </h4>
+            <p>Azure DevOps & Portal</p>
+            <p>Azure serverless functions</p>
+            <p>AWS app deployments</p>
+            <p style="padding-bottom: 50px;">GitOps</p>
           </div>
         </div>
       </div>
@@ -215,7 +240,7 @@
       </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="#destination1">Home</a></li>
-        <li class="list-inline-item"><a href="assets/Razvan-Bertea_Web-Developer.pdf">My CV</a></li>
+        <!-- <li class="list-inline-item"><a href="assets/Razvan-Bertea_Web-Developer.pdf">My CV</a></li> -->
       </ul>
       <p class="copyright">Designed &amp; Coded by Razvan Bertea © 2018</p>
     </footer>
@@ -230,12 +255,43 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="assets/particles.js-master/particles.js"></script>
 
-
   <script>
-    let projects = [{
+    let projects = [
+    {
+        "name": "Scrooge dashboard",
+        "src": "assets/img/scrooge_dashboard.png",
+        "desc": "Scrooge dashboard is a project created in collaboration with DHI GRAS for providing business insights and quota adimistrations tools for their metering workflows.",
+        "icons": [
+          {
+            "name": "React.js",
+            "src": "assets/icons/react.png"
+          },
+          {
+            "name": "Material UI",
+            "src": "assets/icons/materialui.png"
+          },
+          {
+            "name": "Mapbox",
+            "src": "assets/icons/mapbox.png"
+          },
+          {
+            "name": "Node.js",
+            "src": "assets/icons/node.png"
+          },
+          {
+            "name": "UX & UI",
+            "src": "assets/icons/uxui.png"
+          },
+          {
+            "name": "Deployed on Azure Cloud",
+            "src": "assets/icons/azure.jpg"
+          }
+        ]
+      },
+      {
         "name": "Clonebook",
         "src": "assets/img/clonebook.png",
-        "desc": "Clonebook represents my way of building up facebook. It is a complete project where you can engage with your friends through messages, posts, comments and replies. <br/><br/> Currently, you can find the GitHub repo. If you're interested in a demo, let me know.",
+        "desc": "Clonebook represents my way of building up facebook. It is a complete project where you can engage with your friends through messages, posts, comments and replies.",
         "link": "https://github.com/bertearazvan/cloneBook",
         "icons": [{
             "name": "Svelte",
@@ -285,20 +341,41 @@
             "src": "assets/icons/mapbox.png"
           },
           {
-            "name": "Hosted by Amazon Web Services",
+            "name": "Deployed on Amazon Web Services",
             "src": "assets/icons/aws.png"
           }
+        ]
+      },
+      {
+        "name": "CheManager",
+        "src": "assets/img/chemanager.png",
+        "desc": "Browser based application to manage a process for ensuring the safe storage of a number of dangerous chemicals at various depots across EU.",
+        "link": "https://github.com/bertearazvan/chemical_industry",
+        "icons": [
+          {
+            "name": "React.js",
+            "src": "assets/icons/react.png"
+          },
+          {
+            "name": "Node.js",
+            "src": "assets/icons/node.png"
+          },
+          {
+            "name": "Knex.js",
+            "src": "assets/icons/knex.png"
+          },
+          {
+            "name": "Deployed on Amazon Web Services",
+            "src": "assets/icons/aws.png"
+          },
         ]
       },
       {
         "name": "News with Friends",
         "src": "assets/img/news_friends.png",
         "desc": "News with friends is a little project where you can engage with a comunity through news sharing. Add some friends and see what they like.",
-        "link": "http://ec2-54-234-36-236.compute-1.amazonaws.com/",
-        "icons": [{
-            "name": "JavaScript",
-            "src": "assets/icons/js.png"
-          },
+        "link": "https://github.com/bertearazvan/friends_and_posts_react_node/",
+        "icons": [
           {
             "name": "React.js",
             "src": "assets/icons/react.png"
@@ -316,7 +393,7 @@
             "src": "assets/icons/knex.png"
           },
           {
-            "name": "Hosted by Amazon Web Services",
+            "name": "Deployed on Amazon Web Services",
             "src": "assets/icons/aws.png"
           }
         ]
@@ -387,7 +464,7 @@
         "name": "Rominality",
         "src": "assets/img/Artboard 1.png",
         "desc": "Community-based web-service for rominimal genre enthusiasts. Play, share and enjoy music!",
-        "link": "",
+        "link": "https://github.com/bertearazvan/rominality?organization=bertearazvan&organization=bertearazvan",
         "icons": [{
             "name": "JavaScript",
             "src": "assets/icons/js.png"
@@ -416,8 +493,7 @@
         project.icons.map((icon, index) => {
           return "<img class='project-icon' src='" + icon.src + "' title='" + icon.name + "' />";
         }).join("") + "</div> </div>";
-      if (project.link.length > 0) {
-        console.log(project.link.length)
+      if (project.link && project.link.length > 0) {
         return '<div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in"><figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);"> <img class="img-fluid figure-img projects" src="' +
           project.src + '" style="background-image: url(&quot;assets/img/desk.jpg&quot;);" />' + iconsHTML +
           '<div class="project-desc text-center">' + project.desc + '<div style="margin-top:40px;"><a href="' +

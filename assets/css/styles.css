@@ -117,10 +117,20 @@ body {
 
 #skills2 {
   border: 1px solid #c7c7c7;
+  border-radius: 0px 0px 0px 0px;
+  background-color: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
+}
+
+#skills3 {
+  border: 1px solid #c7c7c7;
   border-radius: 0px 20px 20px 0px;
   background-color: transparent;
   margin-left: 5px;
   box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
+  transition: all .3s ease;
 }
 
 .projects {
@@ -191,7 +201,7 @@ body {
 }
 
 #skills-div {
-  width: 60%;
+  width: 80%;
   padding-bottom: 200px;
 }
 
@@ -210,6 +220,7 @@ body {
 @media (min-width: 600px) {
 
   #skills1:hover,
+  #skills3:hover,
   #skills2:hover {
     transform: scale(1.02);
   }
@@ -221,16 +232,38 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1150px) {
 
-
-  #skills-div {
-    width: 60%;
+  #skills3 {
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 0px;
+    margin-top: 35px;
   }
 
   #skills2 {
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 5px;
+  }
+
+  #skills1 {
+    border-radius: 20px 0px 0px 20px;
+    margin-right: 5px;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  #skills3 {
     border-radius: 0px 0px 20px 20px;
     margin-left: 0px;
+  }
+
+  #skills2 {
+    border-radius: 0px 0px 00px 00px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 35px;
   }
 
   #skills1 {
@@ -238,6 +271,16 @@ body {
     margin-right: 0px;
   }
 
+}
+
+@media (max-width: 600px) {
+
+/* 
+  #skills-div {
+    width: 80%;
+  } */
+
+  
   #skills-div {
     width: 85%;
     padding-top: 50px;
