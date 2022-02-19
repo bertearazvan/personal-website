@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import createEmotionCache from '../src/theme/createEmotionCache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
@@ -18,7 +17,7 @@ interface Props {
   pageProps: Record<string, unknown>
 }
 
-export default (props: any) => {
+export default (props: Props) => {
     const { Component, emotionCache = 
         clientSideEmotionCache, pageProps } = props;
   
