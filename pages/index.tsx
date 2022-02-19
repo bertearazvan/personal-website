@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Razvan body
         </h1>
-      </main>
+      </main> 
 
       <footer className={styles.footer}>
           Razvan footer
