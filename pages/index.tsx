@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import {Box } from "@mui/material"
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Box sx={{ backgroundColor: 'primary.main' }}></Box>
         <h1 className={styles.title}>
           Razvan body
         </h1>
