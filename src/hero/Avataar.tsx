@@ -4,6 +4,7 @@ import Avatar from "avataaars"
 const Avataar: FC = () => {
 	return (
 		<Avatar
+			style={{color: '#3742fa'}}
 			avatarStyle='Circle'
 			topType='ShortHairShortFlat'
 			accessoriesType='Blank'
