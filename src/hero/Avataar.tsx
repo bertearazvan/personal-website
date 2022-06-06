@@ -1,24 +1,21 @@
 import React, { FC } from 'react'
-import Avatar from "avataaars"
+import Avatar from 'avataaars'
 
-const Avataar: FC = () => {
-	return (
-		<Avatar
-			style={{color: '#3742fa'}}
-			avatarStyle='Circle'
-			topType='ShortHairShortFlat'
-			accessoriesType='Blank'
-			hairColor='Brown'
-			facialHairType='Blank'
-			clotheType='ShirtCrewNeck'
-			clotheColor='Blue03'
-			eyeType='Default'
-			eyebrowType='DefaultNatural'
-			mouthType='Smile'
-			skinColor='Light'
-		/>
-	)
-
-}
+const Avataar: FC = () => (
+	<Avatar
+		accessoriesType="Blank"
+		avatarStyle="Circle"
+		clotheColor="Blue03"
+		clotheType="ShirtCrewNeck"
+		eyeType="Default"
+		eyebrowType="DefaultNatural"
+		facialHairType="Blank"
+		hairColor="Brown"
+		mouthType="Smile"
+		skinColor="Light"
+		style={{ color: '#3742fa' }}
+		topType="ShortHairShortFlat"
+	/>
+)
 
 export default Avataar

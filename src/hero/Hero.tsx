@@ -8,43 +8,43 @@ import HeroBoxStyled from './HeroBox.styled'
 
 const Hero: FC = () => (
 	<RootBoxStyled position="relative">
-		<Box position="relative" mt={0}>
+		<Box mt={0} position="relative">
 			<Particles
-				style={{ position: 'relative' }}
 				id="tsparticles"
 				options={particlesJSON}
+				style={{ position: 'relative' }}
 			/>
 		</Box>
 		<Box
-			position="absolute"
-			zIndex={5}
-			top={0}
-			left={0}
-			width={1}
-			height="100vh"
-			display="flex"
-			justifyContent="center"
 			alignItems="center"
+			display="flex"
+			height="100vh"
+			justifyContent="center"
+			left={0}
+			position="absolute"
+			top={0}
+			width={1}
+			zIndex={5}
 		>
-			<Box display="flex" justifyContent="center" mb={4} flexWrap="wrap">
+			<Box display="flex" flexWrap="wrap" justifyContent="center" mb={4}>
 				<Box
-					mr={2}
-					minWidth={500}
-					maxWidth="40%"
+					alignItems="center"
 					display="flex"
 					flexDirection="column"
-					alignItems="center"
+					maxWidth="40%"
+					minWidth={500}
+					mr={2}
 				>
 					<Avataar />
-					<Typography sx={{ mt: 2 }} align="center" variant="h1" gutterBottom>
+					<Typography align="center" sx={{ mt: 2 }} variant="h1" gutterBottom>
 						Web developer
 					</Typography>
 					<Typography align="center" variant="h2" gutterBottom>
 						I like to code &<br /> enjoy life
 					</Typography>
 				</Box>
-				<HeroBoxStyled flexGrow={1} minWidth={400} ml={2} maxWidth="25%">
-					<Typography variant="h2" fontWeight="600" color="primary">
+				<HeroBoxStyled flexGrow={1} maxWidth="25%" minWidth={400} ml={2}>
+					<Typography color="primary" fontWeight="600" variant="h2">
 						Hi! I&apos;m Razvan
 					</Typography>
 					<Typography variant="h3" gutterBottom>
@@ -53,8 +53,8 @@ const Hero: FC = () => (
 					</Typography>
 					<Typography variant="h3" gutterBottom>
 						<Box
-							component="span"
 							color="primary"
+							component="span"
 							sx={{ color: 'primary.main', fontWeight: '600' }}
 						>
 							Web developer
