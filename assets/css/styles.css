@@ -170,6 +170,22 @@ body {
   font-weight: 600;
 }
 
+.projectButtonDisabled {
+  border: 2px solid #AAAAAA;
+  border-radius: 15px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #8b8b8b;
+  transition: 0.2s ease;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+}
+
+.projectButtonDisabled:hover {
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
 .projectButton:hover {
   background-color: #3742fa;
   color: white;
@@ -179,7 +195,7 @@ body {
 .project-desc {
   font-family: Raleway, sans-serif;
   font-weight: 400;
-  margin: 40px 20px;
+  margin: 30px 20px;
 }
 
 #toTop {
