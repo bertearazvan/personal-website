@@ -1,262 +1,519 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Razvan's Portfolio</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Razvan's Portfolio</title>
+    <meta property="og:title" content="Razvan's Portfolio" />
+    <meta
+      property="og:description"
+      content="Personal website where I showcase my skills and the latest projects."
+    />
+    <meta
+      property="og:image"
+      content="https://bertearazvan.github.io/personal-website/assets/img/avatar.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://bertearazvan.github.io/personal-website/index.html"
+    />
 
-  <meta property="og:title" content="Razvan's Portfolio">
-  <meta property="og:description" content="Personal website where I showcase my skills and the latest projects.">
-  <meta property="og:image" content="https://bertearazvan.github.io/personal-website/assets/img/avatar.svg">
-  <meta property="og:url" content="https://bertearazvan.github.io/personal-website/index.html">
-
-  <link rel="icon" href="https://bertearazvan.github.io/personal-website/assets/img/avatar.svg" />
-  <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="assets/css/Animated-Scroll-Down-Mouse.css" />
-  <!-- <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css" />
+    <link
+      rel="icon"
+      href="https://bertearazvan.github.io/personal-website/assets/img/avatar.svg"
+    />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/Animated-Scroll-Down-Mouse.css" />
+    <!-- <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css" />
   <link rel="stylesheet" href="assets/css/Diagonal-div-section.css" /> -->
-  <link rel="stylesheet" href="assets/css/Footer-Basic.css" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
   <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css" /> -->
-  <link rel="stylesheet" href="assets/css/Navigation-Clean.css" />
-  <link rel="stylesheet" href="assets/css/Scroll-To-Top-Button.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css" />
+    <link rel="stylesheet" href="assets/css/Scroll-To-Top-Button.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <div class="particles-div" id="particles-js"></div>
-  <div>
-    <button onclick="topFunction()" id="toTop" style="display: none;" title="Go to top"><i
-        class="fas fa-arrow-up"></i></button>
+  <body>
+    <div class="particles-div" id="particles-js"></div>
+    <div>
+      <button
+        onclick="topFunction()"
+        id="toTop"
+        style="display: none"
+        title="Go to top"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
 
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
-
-      <div class="container">
-        <a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse"
-          data-target="#navcol-1">
-          <span class="sr-only">Toggle navigation</span><i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#destination1">About me</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#destination2">Projects</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#destination3">Skills</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#destination4">Contact</a>
-            </li>
-          </ul>
+      <nav
+        class="navbar navbar-light navbar-expand-md navigation-clean"
+        id="navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"></a
+          ><button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navcol-1"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#destination1">About me</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#destination2">Projects</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#destination3">Skills</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#destination4">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-  <div id="destination1" style="position: absolute; z-index: -1; left: 0; margin-top: -8vh;"></div>
-  <div class="mainDiv">
-    <div style="width: 100%;background-color: rgba(1,1,1,0);">
-      <div id="avatarDiv" data-aos="flip-down" data-aos-mirror="false" data-aos-duration="500"
-        data-aos-easing="ease-in">
-        <img src="assets/img/avatar.svg" width="300px" id="avatar" style="filter: grayscale(0%);" />
-      </div>
-      <h1 class="text-center" data-aos="fade-up" data-aos-mirror="true" data-aos-delay="200" id="head1"
-        style="font-family: Raleway, sans-serif;font-weight: 600;margin-top: 40px;">
-        Web Developer
-      </h1>
-      <h2 class="text-center" id="head2" data-aos-mirror="true" data-aos="fade-up" data-aos-delay="500"
-        style="font-family: Raleway, sans-serif;font-weight: 400;">
-        I like to code, design &amp; enjoy life
-      </h2>
-
+      </nav>
     </div>
-    <div class="text-center" id="about-desc" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500"
-      style="background-color: rgba(255,255,255,.9); z-index: 1;width: 80%;margin: 20% auto;border-radius: 15px;border: 2px solid #3742fa;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);">
-      <div style="width: 90%;margin: 0 auto;text-align: left; padding: 10% 0%;">
-        <h2 style="font-family: Raleway, sans-serif;font-weight: 600;color: #3742fa;">
-          Hi! I'm Razvan
+    <div
+      id="destination1"
+      style="position: absolute; z-index: -1; left: 0; margin-top: -8vh"
+    ></div>
+    <div class="mainDiv">
+      <div style="width: 100%; background-color: rgba(1, 1, 1, 0)">
+        <div
+          id="avatarDiv"
+          data-aos="flip-down"
+          data-aos-mirror="false"
+          data-aos-duration="500"
+          data-aos-easing="ease-in"
+        >
+          <img
+            src="assets/img/avatar.svg"
+            width="300px"
+            id="avatar"
+            style="filter: grayscale(0%)"
+          />
+        </div>
+        <h1
+          class="text-center"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="200"
+          id="head1"
+          style="
+            font-family: Raleway, sans-serif;
+            font-weight: 600;
+            margin-top: 40px;
+          "
+        >
+          Web Developer
+        </h1>
+        <h2
+          class="text-center"
+          id="head2"
+          data-aos-mirror="true"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          style="font-family: Raleway, sans-serif; font-weight: 400"
+        >
+          I like to code, design &amp; enjoy life
         </h2>
-        <h3 id="typewrite" class="description-text">
-          I am passionate and enthusiastic about coding, with a creative flair.
-        </h3>
-        <h3 class="description-text">
-          <span style="font-weight: 600;color: #3742fa;">Web developer</span>, excited for opportunities within the open-source community
-          and contributing to projects that serve a meaningful cause.
-        </h3>
-        <h3 class="description-text">
-          Continuously growing my professional knowledge by looking for and creating new experiences.
-        </h3>
       </div>
-    </div>
-  </div>
-
-  <div class="mouse-scroll-container">
-    <div class="mouse-scroll loading-spinner">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-    </div>
-  </div>
-  <div id="destination2" style="position: absolute; z-index: -1; left: 0; margin-top: 20vh;"></div>
-  <div style="background-color: white;width: 95%;margin: 15% auto; margin-bottom: 7%;border-radius: 15px 15px 0px 0px;">
-    <div class="container-lg">
-      <h1 class="text-center" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="300"
-        data-aos-easing="ease-in" id="skills-h1"
-        style="font-family: Raleway, sans-serif;font-weight: 600;margin-top: 50px;padding-top: 40px;color: #3742fa;">
-        Some of my work
-      </h1>
-      <h3 class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="false" data-aos-duration="300"
-        data-aos-easing="ease-in" id="skills-h2"
-        style="font-family: Raleway, sans-serif;margin-bottom: 30px;color: #3742fa; z-index: 1000 !important;">
-        Here is some of my work. Want to cooperate? Send an 
-        <a
-          style="text-decoration: none;"
-          target="_top">email</a> 
-      </h3>
-      <div class="row" id="projectsDiv" style="margin-top: 60px;">
-      </div>
-    </div>
-  </div>
-
-
-  <div id="destination3" style="position: absolute; z-index: -1; left: 0; margin-top: 0vh;"></div>
-  <div style="background-color: transparent;">
-    <div class="text-center" id="skills-div" style="margin: 0 auto;">
-      <h1 class="text-center" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="300"
-        data-aos-easing="ease-in" id="skills-h1"
-        style="font-family: Raleway, sans-serif;font-weight: 600;margin-top: 50px;padding-top: 40px;color: #3742fa;">
-        Skills
-      </h1>
-      <h3 class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="false" data-aos-duration="300"
-        data-aos-easing="ease-in" id="skills-h2"
-        style="font-family: Raleway, sans-serif;margin-bottom: 30px;color: #3742fa;">
-        Here are some of my skills that I am constantly improving on.</h3>
-      <div class="row" style="margin-top: 10%;">
-        <div class="col" style="padding: 0; min-width: 300px;" data-aos="zoom-in-right" data-aos-mirror="false" data-aos-duration="500"
-          data-aos-easing="ease-in">
-          <div id="skills1">
-            <div style="padding-top: 50px;">
-              <img src="assets/img/design.svg" width="90px" />
-            </div>
-            <h2 style="font-family: Raleway, sans-serif;font-weight: 600;padding-top: 20px;">
-              <strong>Designer</strong><br />
-            </h2>
-            <p style="padding-right: 50px;padding-left: 50px;padding-top: 5px;font-family: Raleway, sans-serif;">
-              I value simple content structure, clean design patterns, and
-              thoughtful interactions.<br />
-            </p>
-            <h4 style="padding-top: 20px;color: #3742fa;font-family: Raleway, sans-serif;font-weight: 600;">
-              Things I enjoy designing<br />
-            </h4>
-            <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px;font-family: Raleway, sans-serif;">
-              UX, UI, Web and Mobile<br />
-            </p>
-            <h4 style="padding-top: 20px;font-family: Raleway, sans-serif;color: #3742fa;font-weight: 600;">
-              Design Tools<br />
-            </h4>
-            <p style="padding-top: 5px;">InVision<br /></p>
-            <p>Figma<br /></p>
-            <p style="padding-bottom: 50px;">Adobe Creative Cloud Suite</p>
-          </div>
-        </div>
-        <div style="padding: 0;  min-width: 300px;" class="col" data-aos="zoom-in-left" data-aos-mirror="false" data-aos-duration="500"
-          data-aos-easing="ease-in">
-          <div id="skills2">
-            <div>
-              <img src="assets/img/coding.svg" width="90px" style="padding-top: 50px;" />
-            </div>
-            <h2 style="font-family: Raleway, sans-serif;font-weight: 600;padding-top: 20px;">
-              Web Developer
-            </h2>
-            <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px; font-family: Raleway, sans-serif;">
-              I tend to code things from scratch, and enjoy bringing ideas to
-              life on the web.<br />
-            </p>
-            <h4 style="padding-top: 20px;color: #3742fa;">
-              Languages I speak<br />
-            </h4>
-            <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px; font-family: Raleway, sans-serif;">
-              React.js, Svelte, Node.js, Sapper, Laravel, SQL, MongoDB, HTML, CSS, JavaScript, and PHP
-              <br />
-            </p>
-            <h4 style="padding-top: 20px;color: #3742fa;">
-              Development Tools
-            </h4>
-            <p>Visual Studio Code</p>
-            <p>JetBrains IDE</p>
-            <p>Wordpress</p>
-            <p>Xampp</p>
-            <p style="padding-bottom: 50px;">Git</p>
-          </div>
-        </div>
-        <div style="padding: 0; min-width: 300px;" class="col" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500"
-          data-aos-easing="ease-in">
-          <div id="skills3">
-            <div>
-              <img src="assets/img/cloud.svg" width="90px" style="padding-top: 50px;" />
-            </div>
-            <h2 style="font-family: Raleway, sans-serif;font-weight: 600;padding-top: 20px;">
-              DevOps enthusiast
-            </h2>
-            <p style="padding-top: 5px;padding-right: 50px;padding-left: 50px; font-family: Raleway, sans-serif;">
-              Building CI/CD pipelines for deploying the APIs and apps in an agile way.<br />
-            </p>
-            <h4 style="padding-top: 20px;color: #3742fa;">
-              I have experience with
-            </h4>
-            <p>Azure DevOps & Portal</p>
-            <p>Azure serverless functions</p>
-            <p>AWS app deployments</p>
-            <p style="padding-bottom: 50px;">GitOps</p>
-          </div>
+      <div
+        class="text-center"
+        id="about-desc"
+        data-aos="fade-up"
+        data-aos-mirror="false"
+        data-aos-duration="500"
+        style="
+          background-color: rgba(255, 255, 255, 0.9);
+          z-index: 1;
+          width: 80%;
+          margin: 20% auto;
+          border-radius: 15px;
+          border: 2px solid #3742fa;
+          box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
+        "
+      >
+        <div
+          style="width: 90%; margin: 0 auto; text-align: left; padding: 10% 0%"
+        >
+          <h2
+            style="
+              font-family: Raleway, sans-serif;
+              font-weight: 600;
+              color: #3742fa;
+            "
+          >
+            Hi! I'm Razvan
+          </h2>
+          <h3 id="typewrite" class="description-text">
+            I am passionate and enthusiastic about coding, with a creative
+            flair.
+          </h3>
+          <h3 class="description-text">
+            <span style="font-weight: 600; color: #3742fa">Web developer</span>,
+            excited for opportunities within the open-source community and
+            contributing to projects that serve a meaningful cause.
+          </h3>
+          <h3 class="description-text">
+            Continuously growing my professional knowledge by looking for and
+            creating new experiences.
+          </h3>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- <div
+    <div class="mouse-scroll-container">
+      <div class="mouse-scroll loading-spinner">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+    <div
+      id="destination2"
+      style="position: absolute; z-index: -1; left: 0; margin-top: 20vh"
+    ></div>
+    <div
+      style="
+        background-color: white;
+        width: 95%;
+        margin: 15% auto;
+        margin-bottom: 7%;
+        border-radius: 15px 15px 0px 0px;
+      "
+    >
+      <div class="container-lg">
+        <h1
+          class="text-center"
+          data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-duration="300"
+          data-aos-easing="ease-in"
+          id="skills-h1"
+          style="
+            font-family: Raleway, sans-serif;
+            font-weight: 600;
+            margin-top: 50px;
+            padding-top: 40px;
+            color: #3742fa;
+          "
+        >
+          Some of my work
+        </h1>
+        <h3
+          class="text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-mirror="false"
+          data-aos-duration="300"
+          data-aos-easing="ease-in"
+          id="skills-h2"
+          style="
+            font-family: Raleway, sans-serif;
+            margin-bottom: 30px;
+            color: #3742fa;
+            z-index: 1000 !important;
+          "
+        >
+          Here is some of my work. Want to cooperate? Send an
+          <a style="text-decoration: none" target="_top">email</a>
+        </h3>
+        <div class="row" id="projectsDiv" style="margin-top: 60px"></div>
+      </div>
+    </div>
+
+    <div
+      id="destination3"
+      style="position: absolute; z-index: -1; left: 0; margin-top: 0vh"
+    ></div>
+    <div style="background-color: transparent">
+      <div class="text-center" id="skills-div" style="margin: 0 auto">
+        <h1
+          class="text-center"
+          data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-duration="300"
+          data-aos-easing="ease-in"
+          id="skills-h1"
+          style="
+            font-family: Raleway, sans-serif;
+            font-weight: 600;
+            margin-top: 50px;
+            padding-top: 40px;
+            color: #3742fa;
+          "
+        >
+          Skills
+        </h1>
+        <h3
+          class="text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-mirror="false"
+          data-aos-duration="300"
+          data-aos-easing="ease-in"
+          id="skills-h2"
+          style="
+            font-family: Raleway, sans-serif;
+            margin-bottom: 30px;
+            color: #3742fa;
+          "
+        >
+          Here are some of my skills that I am constantly improving on.
+        </h3>
+        <div class="row" style="margin-top: 10%">
+          <div
+            class="col"
+            style="padding: 0; min-width: 300px"
+            data-aos="zoom-in-right"
+            data-aos-mirror="false"
+            data-aos-duration="500"
+            data-aos-easing="ease-in"
+          >
+            <div id="skills1">
+              <div style="padding-top: 50px">
+                <img src="assets/img/design.svg" width="90px" />
+              </div>
+              <h2
+                style="
+                  font-family: Raleway, sans-serif;
+                  font-weight: 600;
+                  padding-top: 20px;
+                "
+              >
+                <strong>Designer</strong><br />
+              </h2>
+              <p
+                style="
+                  padding-right: 50px;
+                  padding-left: 50px;
+                  padding-top: 5px;
+                  font-family: Raleway, sans-serif;
+                "
+              >
+                I value simple content structure, clean design patterns, and
+                thoughtful interactions.<br />
+              </p>
+              <h4
+                style="
+                  padding-top: 20px;
+                  color: #3742fa;
+                  font-family: Raleway, sans-serif;
+                  font-weight: 600;
+                "
+              >
+                Things I enjoy designing<br />
+              </h4>
+              <p
+                style="
+                  padding-top: 5px;
+                  padding-right: 50px;
+                  padding-left: 50px;
+                  font-family: Raleway, sans-serif;
+                "
+              >
+                UX, UI, Web and Mobile<br />
+              </p>
+              <h4
+                style="
+                  padding-top: 20px;
+                  font-family: Raleway, sans-serif;
+                  color: #3742fa;
+                  font-weight: 600;
+                "
+              >
+                Design Tools<br />
+              </h4>
+              <p style="padding-top: 5px">InVision<br /></p>
+              <p>Figma<br /></p>
+              <p style="padding-bottom: 50px">Adobe Creative Cloud Suite</p>
+            </div>
+          </div>
+          <div
+            style="padding: 0; min-width: 300px"
+            class="col"
+            data-aos="zoom-in-left"
+            data-aos-mirror="false"
+            data-aos-duration="500"
+            data-aos-easing="ease-in"
+          >
+            <div id="skills2">
+              <div>
+                <img
+                  src="assets/img/coding.svg"
+                  width="90px"
+                  style="padding-top: 50px"
+                />
+              </div>
+              <h2
+                style="
+                  font-family: Raleway, sans-serif;
+                  font-weight: 600;
+                  padding-top: 20px;
+                "
+              >
+                Web Developer
+              </h2>
+              <p
+                style="
+                  padding-top: 5px;
+                  padding-right: 50px;
+                  padding-left: 50px;
+                  font-family: Raleway, sans-serif;
+                "
+              >
+                I tend to code things from scratch, and enjoy bringing ideas to
+                life on the web.<br />
+              </p>
+              <h4 style="padding-top: 20px; color: #3742fa">
+                Languages I speak<br />
+              </h4>
+              <p
+                style="
+                  padding-top: 5px;
+                  padding-right: 50px;
+                  padding-left: 50px;
+                  font-family: Raleway, sans-serif;
+                "
+              >
+                React.js, Svelte, Node.js, Sapper, Laravel, SQL, MongoDB, HTML,
+                CSS, JavaScript, and PHP
+                <br />
+              </p>
+              <h4 style="padding-top: 20px; color: #3742fa">
+                Development Tools
+              </h4>
+              <p>Visual Studio Code</p>
+              <p>JetBrains IDE</p>
+              <p>Wordpress</p>
+              <p>Xampp</p>
+              <p style="padding-bottom: 50px">Git</p>
+            </div>
+          </div>
+          <div
+            style="padding: 0; min-width: 300px"
+            class="col"
+            data-aos="fade-up"
+            data-aos-mirror="false"
+            data-aos-duration="500"
+            data-aos-easing="ease-in"
+          >
+            <div id="skills3">
+              <div>
+                <img
+                  src="assets/img/cloud.svg"
+                  width="90px"
+                  style="padding-top: 50px"
+                />
+              </div>
+              <h2
+                style="
+                  font-family: Raleway, sans-serif;
+                  font-weight: 600;
+                  padding-top: 20px;
+                "
+              >
+                DevOps enthusiast
+              </h2>
+              <p
+                style="
+                  padding-top: 5px;
+                  padding-right: 50px;
+                  padding-left: 50px;
+                  font-family: Raleway, sans-serif;
+                "
+              >
+                Building CI/CD pipelines for deploying the APIs and apps in an
+                agile way.<br />
+              </p>
+              <h4 style="padding-top: 20px; color: #3742fa">
+                I have experience with
+              </h4>
+              <p>Azure DevOps & Portal</p>
+              <p>Azure serverless functions</p>
+              <p>AWS app deployments</p>
+              <p style="padding-bottom: 50px">GitOps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div
     style="margin: 0 auto;margin-bottom: 50px;background-color: white;padding-bottom: 40px;width: 95%;border-radius: 0px 0px 15px 15px;">
     <div class="container">
       <div class="row">
       </div>
     </div>
   </div> -->
-  <div id="destination4" style="position: absolute; z-index: -1; left: 0; margin-top: -8vh;"></div>
-  <div class="footer-basic" style="margin-top: -50px;">
-    <footer>
-      <div class="social">
-        <a href="https://github.com/bertearazvan"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/mihai-razvan-bertea-29a298156/"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#destination1">Home</a></li>
-        <!-- <li class="list-inline-item"><a href="assets/Razvan-Bertea_Web-Developer.pdf">My CV</a></li> -->
-      </ul>
-      <p class="copyright">Designed &amp; Coded by Razvan Bertea © 2018</p>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/Scroll-To-Top-Button.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="assets/particles.js-master/particles.js"></script>
+    <div
+      id="destination4"
+      style="position: absolute; z-index: -1; left: 0; margin-top: -8vh"
+    ></div>
+    <div class="footer-basic" style="margin-top: -50px">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/bertearazvan"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mihai-razvan-bertea-29a298156/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#destination1">Home</a></li>
+          <!-- <li class="list-inline-item"><a href="assets/Razvan-Bertea_Web-Developer.pdf">My CV</a></li> -->
+        </ul>
+        <p class="copyright">Designed &amp; Coded by Razvan Bertea © 2018</p>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/Scroll-To-Top-Button.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/particles.js-master/particles.js"></script>
 
-  <!-- dhiprojects -->
-  - LBST
+    <!-- dhiprojects -->
+    <!-- - LBST
   - SAV Sweden/Denmark/Malaysia/Extent
   - CSO app refactoring from Polymer to React
   - Global Seas
@@ -339,273 +596,308 @@
 
   We created doccumentations that currently serve as a good starting point for new frontend employees, and defined coding guidelines and code formatting through the eslint packages for TS, React and Js projects.
 
-  Since most of our apps use a similar look and feel, we created the gras-react-boilerplate npx executable that generates a boilerplate with the most basic components to build upon, very similar to CRA.
+  Since most of our apps use a similar look and feel, we created the gras-react-boilerplate npx executable that generates a boilerplate with the most basic components to build upon, very similar to CRA. -->
 
-  <script>
-    let projects = [
-    {
-        "name": "Scrooge dashboard",
-        "src": "assets/img/scrooge_dashboard.png",
-        "desc": "Scrooge dashboard is a project created in collaboration with DHI GRAS for providing business insights and quota adimistrations tools for their metering workflows.",
-        "icons": [
-          {
-            "name": "React.js",
-            "src": "assets/icons/react.png"
-          },
-          {
-            "name": "Material UI",
-            "src": "assets/icons/materialui.png"
-          },
-          {
-            "name": "Mapbox",
-            "src": "assets/icons/mapbox.png"
-          },
-          {
-            "name": "Node.js",
-            "src": "assets/icons/node.png"
-          },
-          {
-            "name": "UX & UI",
-            "src": "assets/icons/uxui.png"
-          },
-          {
-            "name": "Deployed on Azure Cloud",
-            "src": "assets/icons/azure.jpg"
+    <script>
+      let projects = [
+        {
+          name: "Scrooge dashboard",
+          src: "assets/img/scrooge_dashboard.png",
+          desc: "Scrooge dashboard is a project created in collaboration with DHI GRAS for providing business insights and quota adimistrations tools for their metering workflows.",
+          legacy: true,
+          icons: [
+            {
+              name: "React.js",
+              src: "assets/icons/react.png",
+            },
+            {
+              name: "Material UI",
+              src: "assets/icons/materialui.png",
+            },
+            {
+              name: "Mapbox",
+              src: "assets/icons/mapbox.png",
+            },
+            {
+              name: "Node.js",
+              src: "assets/icons/node.png",
+            },
+            {
+              name: "UX & UI",
+              src: "assets/icons/uxui.png",
+            },
+            {
+              name: "Deployed on Azure Cloud",
+              src: "assets/icons/azure.jpg",
+            },
+          ],
+        },
+        {
+          name: "Clonebook",
+          src: "assets/img/clonebook.png",
+          desc: "Clonebook represents my way of building up facebook. It is a complete project where you can engage with your friends through messages, posts, comments and replies.",
+          link: "https://github.com/bertearazvan/cloneBook",
+          legacy: true,
+          icons: [
+            {
+              name: "Svelte",
+              src: "assets/icons/svelte.png",
+            },
+            {
+              name: "Tailwind",
+              src: "assets/icons/tailwind.png",
+            },
+            {
+              name: "Sapper",
+              src: "assets/icons/sapper.png",
+            },
+            {
+              name: "MongoDB",
+              src: "assets/icons/mongodb.png",
+            },
+            {
+              name: "Socket.io",
+              src: "assets/icons/socket.io.png",
+            },
+            {
+              name: "Node.js",
+              src: "assets/icons/node.png",
+            },
+          ],
+        },
+        {
+          name: "React weather app",
+          src: "assets/img/weather-app.jpg",
+          desc: "An extensive weather app created in React using React-map-gl. Search by your own city and find the forecast for the following hours together with statistics based on the following days.",
+          link: "https://weather-app.mrbertea.com/",
+          legacy: true,
+          icons: [
+            {
+              name: "React.js",
+              src: "assets/icons/react.png",
+            },
+            {
+              name: "Tailwind",
+              src: "assets/icons/tailwind.png",
+            },
+            {
+              name: "Material UI",
+              src: "assets/icons/materialui.png",
+            },
+            {
+              name: "Mapbox",
+              src: "assets/icons/mapbox.png",
+            },
+            {
+              name: "Deployed on Amazon Web Services",
+              src: "assets/icons/aws.png",
+            },
+          ],
+        },
+        {
+          name: "CheManager",
+          src: "assets/img/chemanager.png",
+          desc: "Browser based application to manage a process for ensuring the safe storage of a number of dangerous chemicals at various depots across EU.",
+          link: "https://github.com/bertearazvan/chemical_industry",
+          legacy: true,
+          icons: [
+            {
+              name: "React.js",
+              src: "assets/icons/react.png",
+            },
+            {
+              name: "Node.js",
+              src: "assets/icons/node.png",
+            },
+            {
+              name: "Knex.js",
+              src: "assets/icons/knex.png",
+            },
+            {
+              name: "Deployed on Amazon Web Services",
+              src: "assets/icons/aws.png",
+            },
+          ],
+        },
+        {
+          name: "News with Friends",
+          src: "assets/img/news_friends.png",
+          desc: "News with friends is a little project where you can engage with a comunity through news sharing. Add some friends and see what they like.",
+          link: "https://github.com/bertearazvan/friends_and_posts_react_node/",
+          legacy: true,
+          icons: [
+            {
+              name: "React.js",
+              src: "assets/icons/react.png",
+            },
+            {
+              name: "Material UI",
+              src: "assets/icons/materialui.png",
+            },
+            {
+              name: "Node.js",
+              src: "assets/icons/node.png",
+            },
+            {
+              name: "Knex.js",
+              src: "assets/icons/knex.png",
+            },
+            {
+              name: "Deployed on Amazon Web Services",
+              src: "assets/icons/aws.png",
+            },
+          ],
+        },
+        {
+          name: "Plantify",
+          src: "assets/img/Artboard%204.png",
+          desc: "Digital solution for fighting against worldwide deforestation. Donate goods or money for improving the global climate crysis.",
+          link: "https://plantify.mrbertea.com/",
+          legacy: true,
+          icons: [
+            {
+              name: "JavaScript",
+              src: "assets/icons/js.png",
+            },
+            {
+              name: "UX & UI",
+              src: "assets/icons/uxui.png",
+            },
+          ],
+        },
+        {
+          name: "ChatNow",
+          src: "assets/img/chatapp.png",
+          desc: "A user-friendly live-chat app made with Socket.io and deployed using AWS. Join a room and start chatting.",
+          link: "https://github.com/bertearazvan/chatnow-app",
+          legacy: true,
+          icons: [
+            {
+              name: "JavaScript",
+              src: "assets/icons/js.png",
+            },
+            {
+              name: "Node.js",
+              src: "assets/icons/node.png",
+            },
+            {
+              name: "Font awesome",
+              src: "assets/icons/fontawesome.png",
+            },
+            {
+              name: "Socket.io",
+              src: "assets/icons/socket.io.png",
+            },
+            {
+              name: "Cypress.io",
+              src: "assets/icons/cypress.png",
+            },
+            {
+              name: "Hosted by Amazon Web Services",
+              src: "assets/icons/aws.png",
+            },
+          ],
+        },
+        {
+          name: "Miami Bar",
+          src: "assets/img/Artboard%205.png",
+          desc: "Fully developed website that I'm currently maintaining for a well known Bar in Copenhagen. Reserve a table and come to the party!",
+          link: "http://miamibar.dk.linux138.unoeuro-server.com/",
+          legacy: true,
+          icons: [
+            {
+              name: "JavaScript",
+              src: "assets/icons/js.png",
+            },
+            {
+              name: "UX & UI",
+              src: "assets/icons/uxui.png",
+            },
+          ],
+        },
+        {
+          name: "Rominality",
+          src: "assets/img/Artboard 1.png",
+          desc: "Community-based web-service for rominimal genre enthusiasts. Play, share and enjoy music!",
+          link: "https://github.com/bertearazvan/rominality?organization=bertearazvan&organization=bertearazvan",
+          legacy: true,
+          icons: [
+            {
+              name: "JavaScript",
+              src: "assets/icons/js.png",
+            },
+            {
+              name: "PHP",
+              src: "assets/icons/php.png",
+            },
+            {
+              name: "AJAX & jQuery",
+              src: "assets/icons/ajax.png",
+            },
+            {
+              name: "MySQL",
+              src: "assets/icons/mysql.png",
+            },
+          ],
+        },
+      ];
+      let parentDiv = document.getElementById("projectsDiv");
+
+      parentDiv.innerHTML = projects
+        .map((project, index) => {
+          let iconsHTML = `
+              <div class="project-icon-div">
+                <div>
+                ${project.icons
+                  .map((icon, index) => {
+                    return `
+                      <img class='project-icon' src="${icon.src}" title="${icon.name}" />
+                      `;
+                  })
+                  .join("")}
+                </div>
+              </div>`;
+
+          if (project.link && project.link.length > 0) {
+            return `
+            <div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in">
+              <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);">
+                <img class="img-fluid figure-img projects" src="${project.src}" style="background-image: url("assets/img/desk.jpg");" />
+                  ${iconsHTML}
+                <div class="project-desc text-center">
+                  ${project.desc}
+                  <div style="margin-top:40px;">
+                    <a href="${project.link}" class="projectButton">See project</a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            `;
+          } else {
+            return `
+              <div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in">
+                <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);">
+                  <img class="img-fluid figure-img projects" src="${project.src}" style="background-image: url("assets/img/desk.jpg");" />
+                  ${iconsHTML}
+                  <div class="project-desc text-center">
+                    ${project.desc}
+                    <div style="margin-top:40px;">
+                      <a style=" display:none;" href="${project.link}" class="projectButton">See website</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              `;
           }
-        ]
-      },
-      {
-        "name": "Clonebook",
-        "src": "assets/img/clonebook.png",
-        "desc": "Clonebook represents my way of building up facebook. It is a complete project where you can engage with your friends through messages, posts, comments and replies.",
-        "link": "https://github.com/bertearazvan/cloneBook",
-        "icons": [{
-            "name": "Svelte",
-            "src": "assets/icons/svelte.png"
-          },
-          {
-            "name": "Tailwind",
-            "src": "assets/icons/tailwind.png"
-          },
-          {
-            "name": "Sapper",
-            "src": "assets/icons/sapper.png"
-          },
-          {
-            "name": "MongoDB",
-            "src": "assets/icons/mongodb.png"
-          },
-          {
-            "name": "Socket.io",
-            "src": "assets/icons/socket.io.png"
-          },
-          {
-            "name": "Node.js",
-            "src": "assets/icons/node.png"
-          }
-        ]
-      },
-      {
-        "name": "React weather app",
-        "src": "assets/img/weather-app.jpg",
-        "desc": "An extensive weather app created in React using React-map-gl. Search by your own city and find the forecast for the following hours together with statistics based on the following days.",
-        "link": "https://weather-app.mrbertea.com/",
-        "icons": [{
-            "name": "React.js",
-            "src": "assets/icons/react.png"
-          },
-          {
-            "name": "Tailwind",
-            "src": "assets/icons/tailwind.png"
-          },
-          {
-            "name": "Material UI",
-            "src": "assets/icons/materialui.png"
-          },
-          {
-            "name": "Mapbox",
-            "src": "assets/icons/mapbox.png"
-          },
-          {
-            "name": "Deployed on Amazon Web Services",
-            "src": "assets/icons/aws.png"
-          }
-        ]
-      },
-      {
-        "name": "CheManager",
-        "src": "assets/img/chemanager.png",
-        "desc": "Browser based application to manage a process for ensuring the safe storage of a number of dangerous chemicals at various depots across EU.",
-        "link": "https://github.com/bertearazvan/chemical_industry",
-        "icons": [
-          {
-            "name": "React.js",
-            "src": "assets/icons/react.png"
-          },
-          {
-            "name": "Node.js",
-            "src": "assets/icons/node.png"
-          },
-          {
-            "name": "Knex.js",
-            "src": "assets/icons/knex.png"
-          },
-          {
-            "name": "Deployed on Amazon Web Services",
-            "src": "assets/icons/aws.png"
-          },
-        ]
-      },
-      {
-        "name": "News with Friends",
-        "src": "assets/img/news_friends.png",
-        "desc": "News with friends is a little project where you can engage with a comunity through news sharing. Add some friends and see what they like.",
-        "link": "https://github.com/bertearazvan/friends_and_posts_react_node/",
-        "icons": [
-          {
-            "name": "React.js",
-            "src": "assets/icons/react.png"
-          },
-          {
-            "name": "Material UI",
-            "src": "assets/icons/materialui.png"
-          },
-          {
-            "name": "Node.js",
-            "src": "assets/icons/node.png"
-          },
-          {
-            "name": "Knex.js",
-            "src": "assets/icons/knex.png"
-          },
-          {
-            "name": "Deployed on Amazon Web Services",
-            "src": "assets/icons/aws.png"
-          }
-        ]
-      },
-      {
-        "name": "Plantify",
-        "src": "assets/img/Artboard%204.png",
-        "desc": "Digital solution for fighting against worldwide deforestation. Donate goods or money for improving the global climate crysis.",
-        "link": "https://plantify.mrbertea.com/",
-        "icons": [{
-            "name": "JavaScript",
-            "src": "assets/icons/js.png"
-          },
-          {
-            "name": "UX & UI",
-            "src": "assets/icons/uxui.png"
-          }
-        ]
-      },
+        })
+        .join("");
+    </script>
 
-      {
-        "name": "ChatNow",
-        "src": "assets/img/chatapp.png",
-        "desc": "A user-friendly live-chat app made with Socket.io and deployed using AWS. Join a room and start chatting.",
-        "link": "https://github.com/bertearazvan/chatnow-app",
-        "icons": [{
-            "name": "JavaScript",
-            "src": "assets/icons/js.png"
-          },
-          {
-            "name": "Node.js",
-            "src": "assets/icons/node.png"
-          },
-          {
-            "name": "Font awesome",
-            "src": "assets/icons/fontawesome.png"
-          },
-          {
-            "name": "Socket.io",
-            "src": "assets/icons/socket.io.png"
-          },
-          {
-            "name": "Cypress.io",
-            "src": "assets/icons/cypress.png"
-          },
-          {
-            "name": "Hosted by Amazon Web Services",
-            "src": "assets/icons/aws.png"
-          }
-        ]
-      }, {
-        "name": "Miami Bar",
-        "src": "assets/img/Artboard%205.png",
-        "desc": "Fully developed website that I'm currently maintaining for a well known Bar in Copenhagen. Reserve a table and come to the party!",
-        "link": "http://miamibar.dk.linux138.unoeuro-server.com/",
-        "icons": [{
-            "name": "JavaScript",
-            "src": "assets/icons/js.png"
-          },
-          {
-            "name": "UX & UI",
-            "src": "assets/icons/uxui.png"
-          }
-        ]
-      },
-
-      {
-        "name": "Rominality",
-        "src": "assets/img/Artboard 1.png",
-        "desc": "Community-based web-service for rominimal genre enthusiasts. Play, share and enjoy music!",
-        "link": "https://github.com/bertearazvan/rominality?organization=bertearazvan&organization=bertearazvan",
-        "icons": [{
-            "name": "JavaScript",
-            "src": "assets/icons/js.png"
-          },
-          {
-            "name": "PHP",
-            "src": "assets/icons/php.png"
-          },
-          {
-            "name": "AJAX & jQuery",
-            "src": "assets/icons/ajax.png"
-          },
-          {
-            "name": "MySQL",
-            "src": "assets/icons/mysql.png"
-          }
-        ]
-      }
-
-    ]
-    let parentDiv = document.getElementById("projectsDiv");
-
-    parentDiv.innerHTML = projects.map((project, index) => {
-
-      let iconsHTML = '<div class="project-icon-div"> <div>' +
-        project.icons.map((icon, index) => {
-          return "<img class='project-icon' src='" + icon.src + "' title='" + icon.name + "' />";
-        }).join("") + "</div> </div>";
-      if (project.link && project.link.length > 0) {
-        return '<div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in"><figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);"> <img class="img-fluid figure-img projects" src="' +
-          project.src + '" style="background-image: url(&quot;assets/img/desk.jpg&quot;);" />' + iconsHTML +
-          '<div class="project-desc text-center">' + project.desc + '<div style="margin-top:40px;"><a href="' +
-          project.link +
-          '" class="projectButton">See project</a></div></div></figure></div>';
-      } else {
-        return '<div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in"> <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);"> <img class="img-fluid figure-img projects" src="' +
-          project.src + '" style="background-image: url(&quot;assets/img/desk.jpg&quot;);" />' + iconsHTML +
-          '<div class="project-desc text-center">' + project.desc +
-          '<div style="margin-top:40px;"><a style=" display:none;" href="' + project.link +
-          '" class="projectButton">See website</a></div> </div> </figure> </div>';
-      }
-
-    }).join("");
-  </script>
-
-  <script>
-    AOS.init();
-    particlesJS.load('particles-js', 'assets/particles.json', function () {
-      console.log('callback - particles.js config loaded');
-    });
-  </script>
-
-
-
-
-</body>
-
+    <script>
+      AOS.init();
+      particlesJS.load("particles-js", "assets/particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  </body>
 </html>
