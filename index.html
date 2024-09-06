@@ -215,6 +215,7 @@
       "
     >
       <div class="container-lg">
+        <div class="row" style="margin-top: 360px"></div>
         <h1
           class="text-center"
           data-aos="fade-up"
@@ -232,25 +233,7 @@
         >
           Some of my work
         </h1>
-        <h3
-          class="text-center"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-mirror="false"
-          data-aos-duration="300"
-          data-aos-easing="ease-in"
-          id="skills-h2"
-          style="
-            font-family: Raleway, sans-serif;
-            margin-bottom: 30px;
-            color: #3742fa;
-            z-index: 1000 !important;
-          "
-        >
-          Here is some of my work. Want to cooperate? Send an
-          <a style="text-decoration: none" target="_top">email</a>
-        </h3>
-        <div class="row" id="projectsDiv" style="margin-top: 60px"></div>
+        <div class="row" id="projectsDiv" style="margin-top: 120px"></div>
       </div>
     </div>
 
@@ -669,7 +652,7 @@
           name: "React weather app",
           src: "assets/img/weather-app.jpg",
           desc: "An extensive weather app created in React using React-map-gl. Search by your own city and find the forecast for the following hours together with statistics based on the following days.",
-          link: "https://weather-app.mrbertea.com/",
+          link: "https://github.com/bertearazvan/react-weather-app",
           legacy: true,
           icons: [
             {
@@ -752,7 +735,7 @@
           name: "Plantify",
           src: "assets/img/Artboard%204.png",
           desc: "Digital solution for fighting against worldwide deforestation. Donate goods or money for improving the global climate crysis.",
-          link: "https://plantify.mrbertea.com/",
+          link: "https://github.com/bertearazvan/plantify",
           legacy: true,
           icons: [
             {
@@ -802,7 +785,7 @@
           name: "Miami Bar",
           src: "assets/img/Artboard%205.png",
           desc: "Fully developed website that I'm currently maintaining for a well known Bar in Copenhagen. Reserve a table and come to the party!",
-          link: "http://miamibar.dk.linux138.unoeuro-server.com/",
+          link: "https://github.com/bertearazvan/miamibar_react",
           legacy: true,
           icons: [
             {
@@ -858,7 +841,7 @@
                 </div>
               </div>`;
 
-          if (project.link && project.link.length > 0) {
+          if (project.link && project.link.length > 0 && !project.legacy) {
             return `
             <div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in">
               <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);">
@@ -877,12 +860,26 @@
             return `
               <div class="col-md-4" id="figure-5" data-aos="fade-up" data-aos-mirror="false" data-aos-duration="500" data-aos-easing="ease-in">
                 <figure class="figure" style="border-radius: 22px;padding:10px;box-shadow: 0px 10px 25px -2px rgba(199,199,199,1);">
-                  <img class="img-fluid figure-img projects" src="${project.src}" style="background-image: url("assets/img/desk.jpg");" />
+                  <img class="img-fluid figure-img projects" src="${
+                    project.src
+                  }" style="background-image: url("assets/img/desk.jpg");" />
                   ${iconsHTML}
                   <div class="project-desc text-center">
+                    ${project.legacy ? "<p>- legacy - </p>" : ""}
                     ${project.desc}
                     <div style="margin-top:40px;">
-                      <a style=" display:none;" href="${project.link}" class="projectButton">See website</a>
+                      ${
+                        project.link && project.legacy
+                          ? `<a href="${
+                              project.link
+                            }" class="projectButtonDisabled">
+                              ${
+                                project.link?.includes("github.com")
+                                  ? `<i class="fab fa-github"></i>`
+                                  : ""
+                              } Repo</a>`
+                          : ``
+                      }
                     </div>
                   </div>
                 </figure>
