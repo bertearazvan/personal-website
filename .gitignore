@@ -10,7 +10,8 @@
 
 # production
 /build
-
+old_website
+old
 # misc
 .DS_Store
 .env.local

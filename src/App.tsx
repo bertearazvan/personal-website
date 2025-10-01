@@ -1,12 +1,20 @@
+import React from "react";
 import { Container } from "@mui/material";
+import { styled } from "@mui/system";
+import Header from "./components/Header";
 import Hero from "./sections/Hero";
 
-function App() {
+const StyledApp = styled("div")``;
+
+const App: React.FC = () => {
 	return (
-		<Container maxWidth="lg">
-			<Hero />
-		</Container>
+		<StyledApp>
+			<Container maxWidth="lg">
+				<Header />
+				<Hero />
+			</Container>
+		</StyledApp>
 	);
-}
+};
 
 export default App;
