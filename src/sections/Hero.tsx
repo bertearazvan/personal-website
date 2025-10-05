@@ -19,27 +19,28 @@ const AboutCard = styled.div`
 	background-color: rgba(255, 255, 255, 0.95);
 	z-index: 1;
 	height: fit-content;
-	margin: 12% auto; /* reduced top margin for better visual balance */
+	margin: 8% auto; /* reduced top margin for better visual balance */
 	border-radius: 15px;
 	border: 2px solid #3742fa;
 	box-shadow: 0px 10px 25px -2px rgba(199, 199, 199, 1);
-	padding: 4.5rem 0;
-	margin-top: 132px;
+	padding: 3.5rem 0;
+	margin-top: 92px;
 
 	@media (max-width: 1200px) {
-		margin: 8% auto;
-		padding: 3rem 0;
+		margin: 6% auto;
+		padding: 2.5rem 1rem;
+		width: 90%;
 	}
 `;
 
 const AvatarWrapper = styled.div`
 	margin: 0 auto;
-	width: 300px;
-	padding-top: 100px;
+	width: 280px;
+	padding-top: 80px;
 
 	@media (max-width: 600px) {
-		width: 200px;
-		padding-top: 20px;
+		width: 180px;
+		padding-top: 12px;
 	}
 `;
 
@@ -68,7 +69,12 @@ const Hero: React.FC = () => {
 				<Typography
 					variant="h1"
 					component="h1"
-					sx={{ fontFamily: "Raleway, sans-serif", fontWeight: 600, mt: 4 }}
+					sx={{
+						fontFamily: "Raleway, sans-serif",
+						fontWeight: 600,
+						mt: 4,
+						fontSize: { xs: "2rem", md: "3rem", lg: "3.5rem" },
+					}}
 				>
 					Web Developer
 				</Typography>

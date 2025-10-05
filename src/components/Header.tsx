@@ -14,6 +14,11 @@ const NavBar = styled(AppBar)`
 	padding-bottom: 0.75rem;
 	box-shadow: none;
 	border: none;
+
+	@media (min-width: 768px) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 `;
 
 const NavButton = styled(Button)`
@@ -31,7 +36,15 @@ const Header: React.FC = () => {
 		<Box sx={{ flexGrow: 1 }}>
 			<NavBar position="sticky" color="transparent" elevation={0}>
 				<Toolbar>
-					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+					<Typography
+						variant="h6"
+						component="div"
+						sx={{
+							flexGrow: 1,
+							fontWeight: 700,
+							fontSize: { xs: "1rem", md: "1.25rem" },
+						}}
+					>
 						Razvan
 					</Typography>
 					<Box sx={{ display: { xs: "none", md: "flex" } }}>
