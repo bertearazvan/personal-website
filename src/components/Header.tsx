@@ -2,9 +2,6 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
 
@@ -32,35 +29,43 @@ const NavButton = styled(Button)`
 `;
 
 const Header: React.FC = () => {
+	const menuItems = [
+		{ label: "About me", href: "#destination1" },
+		{ label: "Projects", href: "#destination2" },
+		{ label: "Skills", href: "#destination3" },
+		{ label: "Contact", href: "#destination4" },
+	];
+
+	const handleNavClick = (e: React.MouseEvent, href: string) => {
+		e.preventDefault();
+		const targetId = href.substring(1); // Remove the '#'
+		const targetElement = document.getElementById(targetId);
+
+		if (targetElement) {
+			const offsetTop = targetElement.offsetTop - 80; // Account for header height
+			window.scrollTo({
+				top: offsetTop,
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<Box sx={{ flexGrow: 1 }}>
 			<NavBar position="sticky" color="transparent" elevation={0}>
 				<Toolbar>
-					<Typography
-						variant="h6"
-						component="div"
-						sx={{
-							flexGrow: 1,
-							fontWeight: 700,
-							fontSize: { xs: "1rem", md: "1.25rem" },
-						}}
-					>
-						Razvan
-					</Typography>
+					<Box sx={{ flexGrow: 1 }} /> {/* Spacer to push nav items to the right */}
 					<Box sx={{ display: { xs: "none", md: "flex" } }}>
-						<NavButton href="#destination1">About me</NavButton>
-						<NavButton href="#destination2">Projects</NavButton>
-						<NavButton href="#destination3">Skills</NavButton>
-						<NavButton href="#destination4">Contact</NavButton>
+						{menuItems.map((item) => (
+							<NavButton
+								key={item.label}
+								href={item.href}
+								onClick={(e) => handleNavClick(e, item.href)}
+							>
+								{item.label}
+							</NavButton>
+						))}
 					</Box>
-					<IconButton
-						edge="end"
-						color="inherit"
-						aria-label="menu"
-						sx={{ display: { md: "none" } }}
-					>
-						<MenuIcon />
-					</IconButton>
 				</Toolbar>
 			</NavBar>
 		</Box>

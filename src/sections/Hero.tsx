@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Button } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import styled from "styled-components";
 
 const MainDiv = styled.section`
@@ -8,10 +9,13 @@ const MainDiv = styled.section`
 	margin: 0% 12%;
 	position: relative;
 	padding-top: 1rem;
+	min-height: calc(100vh - 96px);
+	align-items: center;
 
 	@media (max-width: 1200px) {
 		grid-template-columns: 1fr;
 		margin: 0;
+		min-height: auto;
 	}
 `;
 
@@ -101,6 +105,25 @@ const Hero: React.FC = () => {
 						cloud infrastructure. I enjoy contributing to meaningful projects and
 						continuously growing my technical expertise.
 					</Typography>
+					<Box sx={{ mt: 3 }}>
+						<Button
+							variant="contained"
+							size="large"
+							startIcon={<LinkedInIcon />}
+							href="https://www.linkedin.com/in/razvan-bertea-29a298156/"
+							target="_blank"
+							rel="noopener noreferrer"
+							sx={{
+								textTransform: "none",
+								fontSize: "1rem",
+								px: 3,
+								py: 1.5,
+								fontWeight: 600,
+							}}
+						>
+							Let's Connect
+						</Button>
+					</Box>
 				</Container>
 			</AboutCard>
 		</MainDiv>

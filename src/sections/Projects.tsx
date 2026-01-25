@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Container, Grid, Box, Typography, Chip } from "@mui/material";
+import {
+	Container,
+	Grid,
+	Box,
+	Typography,
+	Chip,
+	Button,
+	useMediaQuery,
+	useTheme,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
@@ -405,10 +414,17 @@ const ArchivedSubtitle = styled(Typography)`
 `;
 
 const Projects: React.FC = () => {
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 	const [archivedExpanded, setArchivedExpanded] = useState<boolean>(false);
+	const [visibleDHIProjects, setVisibleDHIProjects] = useState<number>(3);
 
 	const toggleArchived = () => {
 		setArchivedExpanded((prev) => !prev);
+	};
+
+	const loadMoreDHIProjects = () => {
+		setVisibleDHIProjects((prev) => prev + 3);
 	};
 
 	// map icon path to readable skill name
@@ -481,7 +497,17 @@ const Projects: React.FC = () => {
 							Senior Software Developer
 						</Typography>
 						<Chip label="Active" size="medium" color="primary" />
-						<Chip label="@SaxoBank" size="medium" color="primary" />
+						<Chip
+							label="@SaxoBank"
+							size="medium"
+							color="primary"
+							component="a"
+							href="https://www.home.saxo/"
+							target="_blank"
+							rel="noopener noreferrer"
+							clickable
+							sx={{ cursor: "pointer" }}
+						/>
 					</Box>
 
 					<Typography variant="body1" sx={{ color: "text.secondary" }}>
@@ -529,6 +555,7 @@ const Projects: React.FC = () => {
 					<Grid container spacing={4} sx={{ mt: 2 }}>
 						{projects
 							.filter((p) => !p.legacy)
+							.slice(0, isMobile ? visibleDHIProjects : undefined)
 							.map((p) => (
 								<Grid item xs={12} md={4} key={p.name}>
 									{p.link ? (
@@ -638,6 +665,34 @@ const Projects: React.FC = () => {
 								</Grid>
 							))}
 					</Grid>
+
+					{/* See more button - only on mobile */}
+					{(() => {
+						const totalDHIProjects = projects.filter((p) => !p.legacy).length;
+						const hasMore = visibleDHIProjects < totalDHIProjects;
+						return hasMore ? (
+							<Box
+								sx={{
+									display: { xs: "flex", md: "none" },
+									justifyContent: "center",
+									mt: 4,
+								}}
+							>
+								<Button
+									variant="outlined"
+									onClick={loadMoreDHIProjects}
+									sx={{
+										textTransform: "none",
+										px: 4,
+										py: 1.5,
+										fontSize: "1rem",
+									}}
+								>
+									See more projects
+								</Button>
+							</Box>
+						) : null;
+					})()}
 				</Container>
 			)}
 
