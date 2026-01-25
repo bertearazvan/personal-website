@@ -1,14 +1,40 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@mui/material";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const enter = keyframes`
+	from { transform: translateY(18px); opacity: 0; }
+	to { transform: translateY(0); opacity: 1; }
+`;
 
 const SkillCard = styled(Box)`
 	text-align: center;
-	padding: 20px;
+	padding: 32px;
+	background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+	border-radius: 14px;
+	border: 1px solid #c7c7c7;
+	box-shadow: 0 12px 30px -6px rgba(50, 60, 80, 0.16);
+	transition:
+		transform 220ms ease,
+		box-shadow 220ms ease;
+	will-change: transform, box-shadow;
+	animation: ${enter} 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+
+	&:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 26px 46px -8px rgba(50, 60, 80, 0.22);
+	}
+
+	@media (max-width: 900px) {
+		padding: 24px;
+	}
 `;
 
 const SkillIcon = styled.img`
 	width: 90px;
+	height: 90px;
+	object-fit: contain;
+	margin-bottom: 8px;
 `;
 
 const Skills: React.FC = () => {
