@@ -464,6 +464,33 @@ const Projects: React.FC = () => {
 			>
 				Some of my experiences
 			</Typography>
+
+			{/* Current Work at Saxo Bank */}
+			<Container sx={{ my: 2, mb: 6 }}>
+				<Box
+					sx={{
+						background: "linear-gradient(180deg, #ffffff 0%, #fbfdff 100%)",
+						border: "2px solid #3742fa",
+						borderRadius: "14px",
+						padding: "24px",
+						boxShadow: "0 12px 30px -6px rgba(55, 66, 250, 0.2)",
+					}}
+				>
+					<Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
+						<Typography variant="h6" sx={{ fontWeight: 600 }}>
+							Senior Software Developer
+						</Typography>
+						<Chip label="Active" size="medium" color="primary" />
+						<Chip label="@SaxoBank" size="medium" color="primary" />
+					</Box>
+
+					<Typography variant="body1" sx={{ color: "text.secondary" }}>
+						Currently working as a Senior Software Developer at Saxo Bank, focusing on
+						building and maintaining financial trading platforms and services.
+					</Typography>
+				</Box>
+			</Container>
+
 			{/* Work at DHI (projects where legacy === false) */}
 			{projects.some((p) => !p.legacy) && (
 				<Container sx={{ my: 2 }}>

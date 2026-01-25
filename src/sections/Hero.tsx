@@ -93,18 +93,13 @@ const Hero: React.FC = () => {
 						Hi! I'm Razvan
 					</Typography>
 					<DescriptionText variant="body1">
-						I am passionate and enthusiastic about coding, with a creative flair.
+						Senior Software Developer at Saxo Bank, passionate about building scalable
+						web applications and solving complex technical challenges.
 					</DescriptionText>
 					<Typography variant="body1" sx={{ mt: 1 }}>
-						<strong style={{ fontWeight: 600, color: "#3742fa" }}>
-							Web developer
-						</strong>
-						, excited for opportunities within the open-source community and
-						contributing to projects that serve a meaningful cause.
-					</Typography>
-					<Typography variant="body1" sx={{ mt: 1 }}>
-						Continuously growing my professional knowledge by looking for and creating
-						new experiences.
+						Experienced in full-stack development, geospatial data visualization, and
+						cloud infrastructure. I enjoy contributing to meaningful projects and
+						continuously growing my technical expertise.
 					</Typography>
 				</Container>
 			</AboutCard>

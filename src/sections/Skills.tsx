@@ -56,37 +56,39 @@ const Skills: React.FC = () => {
 			<Grid container spacing={2}>
 				<Grid item xs={12} md={4}>
 					<SkillCard>
-						<SkillIcon src="/assets/img/design.svg" alt="design" />
+						<SkillIcon src="/assets/img/coding.svg" alt="coding" />
 						<Typography variant="h6" sx={{ fontWeight: 600, mt: 2 }}>
-							Designer
+							Full-Stack Developer
 						</Typography>
 						<Typography sx={{ px: 6, mt: 1 }}>
-							I value simple content structure, clean design patterns, and thoughtful
-							interactions.
+							I build end-to-end web applications, from frontend interfaces to backend
+							APIs and database architecture.
 						</Typography>
 						<Typography sx={{ mt: 2, color: "#3742fa", fontWeight: 600 }}>
-							Things I enjoy designing
+							Technologies I work with
 						</Typography>
-						<Typography>UX, UI, Web and Mobile</Typography>
+						<Typography>
+							React, Node.js, TypeScript, REST APIs, SQL, MongoDB, Azure, AWS, CI/CD
+						</Typography>
 					</SkillCard>
 				</Grid>
 
 				<Grid item xs={12} md={4}>
 					<SkillCard>
-						<SkillIcon src="/assets/img/coding.svg" alt="coding" />
+						<SkillIcon src="/assets/img/design.svg" alt="geospatial" />
 						<Typography variant="h6" sx={{ fontWeight: 600, mt: 2 }}>
-							Web Developer
+							Geospatial & Data Visualization
 						</Typography>
 						<Typography sx={{ px: 6, mt: 1 }}>
-							I tend to code things from scratch, and enjoy bringing ideas to life on
-							the web.
+							I specialize in building interactive map-based applications and
+							visualizing complex earth observation and environmental data.
 						</Typography>
 						<Typography sx={{ mt: 2, color: "#3742fa", fontWeight: 600 }}>
-							Languages I speak
+							Experience includes
 						</Typography>
 						<Typography>
-							React.js, Svelte, Node.js, Sapper, Laravel, SQL, MongoDB, HTML, CSS,
-							JavaScript, PHP
+							Mapbox, Satellite data integration, Earth observation platforms, Marine
+							vegetation mapping, Water quality monitoring
 						</Typography>
 					</SkillCard>
 				</Grid>

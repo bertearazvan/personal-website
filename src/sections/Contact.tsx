@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Typography, Box, TextField, Button } from "@mui/material";
+import { Container, Typography, Box, Button } from "@mui/material";
 import styled from "styled-components";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactBox = styled(Box)`
 	text-align: center;
@@ -15,14 +16,24 @@ const Contact: React.FC = () => {
 					Contact
 				</Typography>
 				<Typography sx={{ mb: 3 }}>
-					If you'd like to get in touch, send me a message.
+					Let's connect! Feel free to reach out to me on LinkedIn.
 				</Typography>
-				<Box component="form" sx={{ maxWidth: 600, mx: "auto" }}>
-					<TextField fullWidth label="Your name" sx={{ mb: 2 }} />
-					<TextField fullWidth label="Your email" sx={{ mb: 2 }} />
-					<TextField fullWidth label="Message" multiline rows={4} sx={{ mb: 2 }} />
-					<Button variant="contained">Send</Button>
-				</Box>
+				<Button
+					variant="contained"
+					size="large"
+					startIcon={<LinkedInIcon />}
+					href="https://www.linkedin.com/in/razvan-bertea-29a298156/"
+					target="_blank"
+					rel="noopener noreferrer"
+					sx={{
+						textTransform: "none",
+						fontSize: "1.1rem",
+						px: 4,
+						py: 1.5,
+					}}
+				>
+					Connect on LinkedIn
+				</Button>
 			</ContactBox>
 		</Container>
 	);
