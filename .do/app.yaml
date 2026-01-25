@@ -1,0 +1,12 @@
+name: personal-website
+static_sites:
+ - name: web
+   github:
+    repo: bertearazvan/personal-website
+    branch: master
+    deploy_on_push: true
+   build_command: yarn build
+   output_dir: dist
+   catchall_document: index.html
+   routes:
+    - path: /

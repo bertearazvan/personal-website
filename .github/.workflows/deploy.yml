@@ -1,0 +1,24 @@
+name: Deploy app
+
+on:
+ push:
+  branches: [master, dev-react]
+
+permissions:
+ contents: read
+
+jobs:
+ deploy-app:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+
+   - name: Build
+     run: yarn build
+
+   - name: Deploy the app
+     uses: digitalocean/app_action/deploy@v2
+     with:
+      token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      app_name: personal-website
