@@ -39,21 +39,15 @@ const SkillIcon = styled.img`
 
 const Skills: React.FC = () => {
 	return (
-		<Container sx={{ my: 8 }} id="destination3">
+		<Container sx={{ my: 24 }} id="destination3">
 			<Typography
 				variant="h4"
 				sx={{ textAlign: "center", fontWeight: 600, color: "#3742fa", mb: 2 }}
 			>
 				Skills
 			</Typography>
-			<Typography
-				variant="subtitle1"
-				sx={{ textAlign: "center", color: "#3742fa", mb: 6 }}
-			>
-				Here are some of my skills that I am constantly improving on.
-			</Typography>
 
-			<Grid container spacing={2}>
+			<Grid container spacing={2} mt={10}>
 				<Grid item xs={12} md={4}>
 					<SkillCard>
 						<SkillIcon src="/assets/img/coding.svg" alt="coding" />

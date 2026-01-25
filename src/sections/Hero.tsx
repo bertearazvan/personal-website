@@ -9,6 +9,7 @@ const MainDiv = styled.section`
 	margin: 0% 12%;
 	position: relative;
 	padding-top: 1rem;
+	padding-bottom: 256px;
 	min-height: calc(100vh - 96px);
 	align-items: center;
 
@@ -80,7 +81,7 @@ const Hero: React.FC = () => {
 						fontSize: { xs: "2rem", md: "3rem", lg: "3.5rem" },
 					}}
 				>
-					Web Developer
+					Software Developer
 				</Typography>
 				<Typography
 					variant="h5"

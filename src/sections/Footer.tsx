@@ -30,9 +30,6 @@ const Footer: React.FC = () => {
 					<i className="fab fa-linkedin-in" />
 				</a>
 			</Social>
-			<div>
-				<a href="#destination1">Home</a>
-			</div>
 			<p style={{ marginTop: 12 }}>
 				Designed &amp; Coded by Razvan Bertea © 2018
 			</p>

@@ -478,7 +478,7 @@ const Projects: React.FC = () => {
 				variant="h4"
 				sx={{ textAlign: "center", fontWeight: 600, color: "#3742fa", mb: 6 }}
 			>
-				Some of my experiences
+				Work experiences
 			</Typography>
 
 			{/* Current Work at Saxo Bank */}
