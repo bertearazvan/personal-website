@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Typography, Container, Button } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import styled from "styled-components";
+import initPlanet3D from "../components/3D/planet";
 
 const MainDiv = styled.section`
 	display: grid;
@@ -63,6 +64,9 @@ const DescriptionText = styled(Typography)`
 `;
 
 const Hero: React.FC = () => {
+	useEffect(() => {
+		initPlanet3D();
+	}, []);
 	return (
 		<MainDiv>
 			<Container sx={{ textAlign: "center" }}>
@@ -127,6 +131,11 @@ const Hero: React.FC = () => {
 					</Box>
 				</Container>
 			</AboutCard>
+			<div>
+				<section>
+					<canvas className="planet-3D" />
+				</section>
+			</div>
 		</MainDiv>
 	);
 };
