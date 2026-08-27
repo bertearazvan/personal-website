@@ -1,0 +1,32 @@
+name: Deploy app
+
+on:
+ push:
+  branches: [master, dev-react]
+
+permissions:
+ contents: read
+
+jobs:
+ deploy-app:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+
+   - name: Setup Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: "24"
+
+   - name: Install dependencies
+     run: yarn install --frozen-lockfile
+
+   - name: Build
+     run: yarn build
+
+   - name: Deploy the app
+     uses: digitalocean/app_action/deploy@v2
+     with:
+      token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      app_name: personal-website
